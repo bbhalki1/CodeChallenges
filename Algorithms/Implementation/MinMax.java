@@ -14,10 +14,7 @@ public class MinMax {
         	long res = in.nextLong();
         	arr[i] = res;
         	sum = sum + res;
-        	//System.out.println(sum);
          }
-
-        //System.out.print(sum);
         Arrays.sort(arr);
         System.out.println((sum - arr[arr.length-1]) + " " + (sum - arr[0]));
     }
