@@ -3,7 +3,13 @@ import java.util.*;
 public class MinMaxDivideConquer{
 	
 	public static void main(String[] args) {
-		int[] arr = {4, 3, 5, 1, 2, 6, 9, 2, 10, 11, 12};
+		//int[] arr = {4, 3, 5, 1, 2, 6, 9, 2, 10, 11, 12};
+		Scanner sc = new Scanner(System.in);
+		int len = sc.nextInt();
+		int arr[] = new int[len];
+		for (int i=0; i<len ;i++ ) {
+			arr[i] = sc.nextInt();
+		}
   		MinMax result = findMinMaxRecursive(arr, 0, arr.length - 1);
   		System.out.println("maximum= " + result.max);
   		System.out.println("minimum= " + result.min);	
