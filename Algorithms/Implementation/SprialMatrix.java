@@ -11,11 +11,6 @@ public class SprialMatrix{
 				arr[i][j] = sc.nextInt();
 			}
 		}
-		// for (int i=0;i<m;i++ ) {
-		// 	for (int j=0;j<n ;j++ ) {
-		// 		System.out.print(arr[i][j]);
-		// 	}
-		// }
 		int t=0,b=m-1,l=0,r=n-1;
 		int dir =0;
 		while (t <= b && l <= r) {
