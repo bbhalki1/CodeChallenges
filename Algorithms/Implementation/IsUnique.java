@@ -6,7 +6,6 @@ public class IsUnique{
 		if (str.length() > 128) {
 			return false;
 		}
-		//String s = "abcd";
 		boolean[] char_set = new boolean[128];
 		for (int i=0; i<str.length() ; i++ ) {
 			int val = str.charAt(i);
